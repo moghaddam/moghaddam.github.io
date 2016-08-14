@@ -1,0 +1,209 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
+body {
+    overflow-x: hidden;
+    padding-top:50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    /*line-height: 21px;*/
+    /*font-weight: 300;*/
+    color: #666;
+}
+
+h2, h2, h3 {
+    font-weight: 100;
+}
+
+.navbar-default {
+    background: #444444 none;
+    border-bottom: none;
+}
+.navbar-default .navbar-brand {
+    color: #fdb655;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #fdb655;
+}
+.navbar-default .navbar-text {
+    color: #999999;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #999999;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fdb655;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #444444;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #999999;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #fdb655;
+    background: #444444 none;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+    background-color: #444444;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fdb655;
+    background: #444444 none;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fdb655;
+    background: #444444 none;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fdb655;
+    background: #444444 none;
+}
+.navbar-default .navbar-toggle {
+    border-color: #444444;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #444444;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #999999;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #999999;
+}
+.navbar-default .navbar-link {
+    color: #999999;
+}
+.navbar-default .navbar-link:hover {
+    color: #fdb655;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #999999;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fdb655;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fdb655;
+        background-color: #444444;
+    }
+}
+
+#main-section .row {
+    padding-bottom: 30px;
+    background-color: lightblue;
+}
+
+#main-section h2 {
+    font-size: 55px;
+    padding-left:10px;
+}
+
+#main-section h3 {
+    margin-bottom: 20px;
+}
+
+#main-section a {
+    background-color: #fdb655;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 28px;
+    color:white;
+    width:230px;
+}
+
+#main-section img {
+    width: 150px;
+}
+
+#main-section a:hover {
+    background-color: #FFBE74;
+    margin-top: 40px;
+    padding:10px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 28px;
+    color:white;
+}
+
+#whatis-jsonb-section {
+    margin-top:30px;
+    font-weight: 100;
+}
+
+#whatis-jsonb-section strong {
+    font-weight: 500;
+}
+
+#whatis-jsonb-section p {
+    margin-top:30px;
+    margin-bottom:20px;
+    font-size: 23px;
+    line-height: 36px;
+}
+
+#jsonb-features-section {
+    margin-top: 70px;
+}
+
+#jsonb-features-section p {
+    color: #666;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 100;
+}
+
+.icon-large {
+    font-size: 3em;
+    color: #666;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+#sample-section {
+    margin-top: 40px;
+}
+
+#sample-section pre {
+    padding: 0;
+}
+.subtitles {
+    border-bottom: solid 1px #eee;
+    padding-bottom: 5px;
+    margin-top: 55px;
+}
+
+.subtitles > span {
+    border-bottom: solid 1px orange;
+    padding-bottom: 4px;
+    margin-top: 20px;
+}
+
+#footer-section {
+    /*background-color: #444;*/
+    padding: 10px;
+    text-align: center;
+    /*color: #999;*/
+    /*margin-top: 30px;*/
+}
