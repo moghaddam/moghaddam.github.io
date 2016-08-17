@@ -7,8 +7,6 @@ body {
     padding-top:50px;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    /*line-height: 21px;*/
-    /*font-weight: 300;*/
     color: #666;
 }
 
@@ -106,18 +104,25 @@ h2, h2, h3 {
     }
 }
 
+#main-section {
+    padding: 0;
+}
 #main-section .row {
     padding-bottom: 30px;
-    background-color: lightblue;
+    background: url("images/main-section-background.png") fixed center;
+    background-size: cover;
+    background-origin: content-box;
 }
 
 #main-section h2 {
     font-size: 55px;
     padding-left:10px;
+    color: #404040;
 }
 
 #main-section h3 {
     margin-bottom: 20px;
+    color: #606060;
 }
 
 #main-section img {
@@ -196,9 +201,6 @@ h2, h2, h3 {
 }
 
 #footer-section {
-    /*background-color: #444;*/
     padding: 10px;
     text-align: center;
-    /*color: #999;*/
-    /*margin-top: 30px;*/
 }
