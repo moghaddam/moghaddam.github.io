@@ -4,11 +4,11 @@
 <html lang="en">
 
 <head>
-    <title>JSON Binding (JSON-B) - Home</title>
+    <title>JSON Binding (JSON-B) - Contributors</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Java API for JSON Binding (JSON-B) Home">
+    <meta name="description" content="Java API for JSON Binding (JSON-B) Contributors">
     <meta name="author" content="Ehsan Zaery Moghaddam, Dmitry Kornilov">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/images/favico/apple-icon-57x57.png">
@@ -41,7 +41,7 @@
 
     <!-- Highlight JS-->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/hjs-screen-theme.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles/hjs-github-theme.css" media="screen">
     <link href="style.css" rel="stylesheet"/>
     <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -80,7 +80,7 @@
                             <li><a href="mailing-lists.html">Mailing Lists</a></li>
                             <li><a href="https://www.jcp.org/en/jsr/detail?id=367" target="_blank">JSR 367 Page</a></li>
                             <li><a href="https://java.net/jira/browse/JSONB_SPEC/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel" target="_blank">Issue tracking</a></li>
-                            <li><a href="contributors.html">Contributors</a></li>
+                            <li><a href="#">Contributors</a></li>
                         </ul>
                     </li>
                     <li><a href="download.html">Download</a></li>
@@ -90,145 +90,83 @@
     </nav>
     <!-- End Navigation bar-->
 
-    <!-- Start JSON-B Logo and Main Title -->
-    <div class="container-fluid" id="main-section">
+    <!-- Start General Heading -->
+    <div class="container-fluid" id="general-header-section">
         <div class="row">
-            <div class="col-lg-12 col-md-12 text-center">
-                <img src="jsonb-logo.png"/>
-                <br/>
-                <h2 class="text-center" style="">
-                    Java API for JSON Binding
-                </h2>
-                <h3 class="text-center">
-                    <span>JSR 367 Specification</span>
+            <div class="col-lg-11 col-sm-10">
+                <h3>
+                    <span>{ "Contributors" : 3 }</span>
                 </h3>
-                <a href="getting-started.html" class="btn btn-primary btn-warning">Getting Started <span class="glyphicon glyphicon-map-marker"></span></a>
-                <a href="#" class="btn btn-primary btn-warning">Download <span class="glyphicon glyphicon-cloud-download"></span></a>
+            </div>
+            <div class="col-lg-1 col-sm-2 text-center general-header-logo">
+                <img src="jsonb-logo.png"/>
             </div>
         </div>
     </div>
-    <!-- End JSON-B Logo and Main Title -->
+    <!-- End General Heading-->
 
-    <!-- Start What is JSON-B -->
-    <div class="container" id="whatis-jsonb-section">
+    <!-- Start Contributors -->
+    <div class="container-fluid content-section">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3>What is <strong>JSON-B?</strong></h3>
-                <p class="col-lg-12 text-center">
-                    JSON-B is a standard binding layer for converting Java objects to/from JSON messages. It
-                    defines a default mapping algorithm for converting existing Java classes to JSON, while
-                    enabling developers to customize the mapping process through the use of Java annotations.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End What is JSON-B -->
-    <!-- Start features section -->
-    <div class="container" id="jsonb-features-section">
-        <div class="row">
-            <div class="col-md-3 col-sm-6 text-center">
-                <div>
-                    <i class="fa fa-eye icon-large"></i>
-                </div>
-                <div>
-                    <h4>Consistent</h4>
-                    <p>Consistent with JAXB (Java API for XML Binding) and other Java EE and SE APIs where appropriate</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <div>
-                    <i class="fa fa-check-circle icon-large"></i>
-                </div>
-                <div>
-                    <h4>Conventional</h4>
-                    <p>Define default mapping of Java classes and instances to JSON document counterparts</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <div>
-                    <i class="fa fa-gear icon-large"></i>
-                </div>
-                <div>
-                    <h4>Customizable</h4>
-                    <p>Allow customization of the default mapping definition</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <div>
-                    <i class="fa fa-thumbs-up icon-large"></i>
-                </div>
-                <div>
-                    <h4>Easy to Use</h4>
-                    <p>Default use of the APIs should not require prior knowledge of the JSON document format and specification</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End features section -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <hr style="width: 500px;"/>
-            </div>
-        </div>
-    </div>
-
-    <!-- Start serialization sample setion -->
-    <div class="container" id="sample-section">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center">To serialize/deserialize a Java Object to/from JSON</h3>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4 class="text-center subtitles"><span>The Java Class</span></h4>
-<pre><code class="java">public class Dog {
-    public String name;
-    public int age;
-    public boolean bitable;
-}</code></pre>
+                <h3>Project's contributors</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr style="width: 500px;"/>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <h4 class="text-center subtitles"><span>JSON-B API calls</span></h4>
-              <pre><code class="java">public static void main(String[] args) {
-// Create a dog instance
-Dog dog = new Main.Dog();
-dog.name = "Falco";
-dog.age = 4;
-dog.bitable = false;
-
-// Create Jsonb and serialize
-<b>Jsonb jsonb = JsonbBuilder.create();
-String result = jsonb.toJson(dog);</b>
-
-System.out.println(result);
-
-// Deserialize back
-<b>dog = jsonb.fromJson("{\"name\":\"Falco\",\"age\":4,\"bitable\":false}", Dog.class);</b>
-}</code></pre>
+                </div>
+                <br/>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 text-center" style="border: solid 0px lightgray; padding:10px;">
+                            <div>
+                                <a href="https://www.javaindeed.com" target="_blank">
+                                    <img style="width:150px;" class="img-circle" src="https://avatars0.githubusercontent.com/u/852321?v=3&s=460" alt="Ehsan Zaery Moghaddam"/>
+                                </a>
+                            </div>
+                            <div class=" text-center">
+                                <h4><a href="http://twitter.com/zaerymoghaddam/" target="_blank">Ehsan Zaery Moghaddam</a></h4>
+                                <p class="contributor-description">The JSON-B website is designed and developed by Ehsan</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center" style="border: solid 0px lightgray; padding:10px;">
+                            <div>
+                                <a href="http://carladebona.com/" target="_blank">
+                                    <img style="width:150px;" class="img-circle" src="http://carladebona.com/images/avatar.png" alt="Carla De Bona"/>
+                                </a>
+                            </div>
+                            <div class=" text-center">
+                                <h4><a href="http://twitter.com/carladebona/" target="_blank">Carla De Bona</a></h4>
+                                <p class="contributor-description">JSONB logo is created by UX/UI Designer</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center" style="border: solid 0px lightgray; padding:10px;">
+                            <div>
+                                <a href="http://twitter.com/pandaconstantin/" target="_blank">
+                                    <img style="width:150px;" class="img-circle" src="https://pbs.twimg.com/profile_images/753034955274485761/S4TLTuoH_400x400.jpg" alt="Constantin Drabo"/>
+                                </a>
+                            </div>
+                            <div class=" text-center">
+                                <h4><a href="http://twitter.com/pandaconstantin/" target="_blank">Constantin Drabo</a></h4>
+                                <p class="contributor-description">Constantin Drabo and FasoJUG adopt JSR-367 <a href="https://github.com/pandaconstantin/adopjsrfasojug" target="_blank">test project</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <h4 class="text-center subtitles"><span>The JSON representation</span></h4>
-<pre><code class="json">{
-    "name": "Falco",
-    "age": 3,
-    "bitable": false
-}</code></pre>
-                    </div>
+                </div>
 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr style="width: 500px;"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End serialization sample section -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <hr style="width: 500px;"/>
-            </div>
-        </div>
-    </div>
+    <!-- End Contributors -->
 
     <!-- Start footer section-->
     <div class="container-fluid" id="footer-section">

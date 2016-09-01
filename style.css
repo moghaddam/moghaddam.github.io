@@ -198,3 +198,56 @@ h2, h2, h3 {
     padding: 10px;
     text-align: center;
 }
+
+#general-header-section {
+    padding: 0;
+}
+
+#general-header-section .row {
+    padding: 5px 0 10px 10px;
+    background: url("images/main-section-background.png") fixed center;
+    background-size: cover;
+    background-origin: content-box;
+    border-bottom: solid 1px #adadad;
+}
+
+#general-header-section h3 {
+    color: #000;
+    font-size: 33px;
+}
+
+#general-header-section img {
+    width: 50px;
+}
+
+.content-section p {
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: justify;
+}
+
+.content-section li {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content-section .row {
+    padding:10px;
+}
+
+.content-section pre {
+    padding:0;
+}
+
+.contributor-description {
+    font-size: 13px !important;
+    text-align: center !important;
+}
+
+@media (max-width: 767px) {
+    .general-header-logo {
+        display:none;
+    }
+}
