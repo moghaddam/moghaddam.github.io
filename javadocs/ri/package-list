@@ -1,0 +1,11 @@
+org.eclipse.persistence.json.bind
+org.eclipse.persistence.json.bind.internal
+org.eclipse.persistence.json.bind.internal.adapter
+org.eclipse.persistence.json.bind.internal.cdi
+org.eclipse.persistence.json.bind.internal.internalOrdering
+org.eclipse.persistence.json.bind.internal.naming
+org.eclipse.persistence.json.bind.internal.properties
+org.eclipse.persistence.json.bind.internal.serializer
+org.eclipse.persistence.json.bind.internal.unmarshaller
+org.eclipse.persistence.json.bind.model
+org.eclipse.persistence.json.bind.serializer
