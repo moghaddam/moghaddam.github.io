@@ -195,12 +195,7 @@ h2, h2, h3 {
 }
 
 #footer-section {
-    padding: 10px;
     text-align: center;
-}
-
-#general-header-section {
-    padding: 0;
 }
 
 #general-header-section .row {
@@ -244,6 +239,16 @@ h2, h2, h3 {
 .contributor-description {
     font-size: 13px !important;
     text-align: center !important;
+}
+
+/*
+ * Overwrite container-fluid from Bootstrap to remove horizontal scrollbars
+ */
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (max-width: 767px) {
